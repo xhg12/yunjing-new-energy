@@ -24,37 +24,53 @@
     <div class="zoneAction">
       <div>
         <div>
-          <i class="iconfont icon-chongzhi"></i>
+          <div>
+            <i class="iconfont icon-qiandao"></i>
+          </div>
           <span class="custom-title">每日签到</span>
         </div>
         <div>
-          <i class="iconfont icon-chongzhi"></i>
+          <div>
+            <i class="iconfont icon-dazhuanpan"></i>
+          </div>
           <span class="custom-title">幸运转盘</span>
         </div>
         <div>
-          <i class="iconfont icon-chongzhi"></i>
+          <div>
+            <i class="iconfont icon-liwu"></i>
+          </div>
           <span class="custom-title">邀请有奖</span>
         </div>
         <div>
-          <i class="iconfont icon-chongzhi"></i>
+          <div>
+            <i class="iconfont icon-gonggao"></i>
+          </div>
           <span class="custom-title">活动公告</span>
         </div>
       </div>
       <div>
         <div>
-          <i class="iconfont icon-chongzhi"></i>
+          <div>
+            <i class="iconfont icon-chongzhi"></i>
+          </div>
           <span class="custom-title">我要充值</span>
         </div>
         <div>
-          <i class="iconfont icon-chongzhi"></i>
+          <div>
+            <i class="iconfont icon-jinbitixian"></i>
+          </div>
           <span class="custom-title">我要提现</span>
         </div>
         <div>
-          <i class="iconfont icon-chongzhi"></i>
+          <div>
+            <i class="iconfont icon-qunzuduoren"></i>
+          </div>
           <span class="custom-title">团队奖励</span>
         </div>
         <div>
-          <i class="iconfont icon-chongzhi"></i>
+          <div>
+            <i class="iconfont icon-tuijianfantuijian"></i>
+          </div>
           <span class="custom-title">推荐奖励</span>
         </div>
       </div>
@@ -82,10 +98,10 @@
 
     <!-- 风力储电项目 -->
     <div class="wind">
-      <img src="../../assets/images/Snipaste_2022-04-25_16-40-19.png" alt="">
+      <img src="../../assets/images/Snipaste_2022-04-25_16-40-19.png" alt="" />
       <!-- 项目名称 -->
       <div class="windName">
-        <i class="iconfont icon-chongzhi"></i>
+        <i class="iconfont icon-huo"></i>
         <span>560MW分散式风电储能项目</span>
       </div>
       <!-- 收益 -->
@@ -94,15 +110,15 @@
           <span>180<span>日</span></span>
           <span>投资期限</span>
         </div>
-         <div>
+        <div>
           <span>1.83%</span>
           <span>投资期限</span>
         </div>
-         <div>
+        <div>
           <span>234.2<span>元</span></span>
           <span>投资期限</span>
         </div>
-         <div>
+        <div>
           <span>12800<span>元</span></span>
           <span>投资期限</span>
         </div>
@@ -112,8 +128,13 @@
         <div>
           <span>按天付收益，到期返本</span>
           <div>
-          <van-progress :show-pivot="false" color="#386766" stroke-width="10px" :percentage="100" />
-          <p>100.00%</p>
+            <van-progress
+              :show-pivot="false"
+              color="#386766"
+              stroke-width="10px"
+              :percentage="100"
+            />
+            <p>100.00%</p>
           </div>
         </div>
         <button>立即投资</button>
@@ -121,11 +142,11 @@
     </div>
 
     <!-- 大型风光综合发电项目 -->
-     <div class="wind">
-      <img src="../../assets/images/Snipaste_2022-04-25_16-40-19.png" alt="">
+    <div class="wind">
+      <img src="../../assets/images/Snipaste_2022-04-25_16-40-19.png" alt="" />
       <!-- 项目名称 -->
       <div class="windName">
-        <i class="iconfont icon-chongzhi"></i>
+        <i class="iconfont icon-huo"></i>
         <span>大型风光综合发电项目</span>
       </div>
       <!-- 收益 -->
@@ -134,15 +155,15 @@
           <span>365<span>日</span></span>
           <span>投资期限</span>
         </div>
-         <div>
+        <div>
           <span>1.78%</span>
           <span>每日收益率</span>
         </div>
-         <div>
+        <div>
           <span>2260.60<span>元</span></span>
           <span>日收益</span>
         </div>
-         <div>
+        <div>
           <span>127000<span>元</span></span>
           <span>起购金额</span>
         </div>
@@ -152,8 +173,13 @@
         <div>
           <span>按天付收益，到期返本</span>
           <div>
-          <van-progress :show-pivot="false" color="#386766" stroke-width="10px" :percentage="21" />
-          <p>21.00%</p>
+            <van-progress
+              :show-pivot="false"
+              color="#386766"
+              stroke-width="10px"
+              :percentage="21"
+            />
+            <p>21.00%</p>
           </div>
         </div>
         <button id="towBtn">立即投资</button>
@@ -169,7 +195,7 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-.home{
+.home {
   background-color: #f7f9fa;
 }
 .headerOut {
@@ -237,8 +263,20 @@ export default {
       flex-direction: column;
       align-items: center;
       margin-top: 15px;
-      .iconfont {
-        font-size: 20px;
+      div {
+        width: 40px;
+        height: 40px;
+        // background-color: pink;
+        background-image: -moz-linear-gradient(to right top,#24807d,#90bfbd);
+        background-image: linear-gradient(to right top,#24807d,#90bfbd);
+        border-radius: 12px;
+        transform: rotate(45deg);
+        margin-bottom: 10px;
+        .iconfont {
+          font-size: 20px;
+          transform: rotate(-45deg);
+          color: #fff;
+        }
       }
       span {
         font-size: 14px;
@@ -271,10 +309,10 @@ export default {
       flex-direction: column;
       font-size: 12px;
       span:first-child {
-      color: #24807d;
-      font-weight: bold;
+        color: #24807d;
+        font-weight: bold;
       }
-      span:last-child{
+      span:last-child {
         color: #ffc400;
       }
     }
@@ -293,9 +331,10 @@ export default {
   }
 }
 
-.wealth{
+.wealth {
   margin-top: 35px;
-  span{
+  margin-bottom: 10px;
+  span {
     font-size: 14px;
     float: left;
     margin-left: 22px;
@@ -303,16 +342,16 @@ export default {
     letter-spacing: 1px;
     font-weight: bold;
   }
-  div{
+  div {
     border-radius: 0 2px 2px 0;
     margin-left: 22px;
     width: 65px;
     height: 10px;
-    background-image:linear-gradient(to right,#f7f9fa,#386766);
+    background-image: linear-gradient(to right, #f7f9fa, #386766);
   }
 }
 
-.wind{
+.wind {
   margin-bottom: 15px;
   width: 330px;
   margin-left: 22px;
@@ -320,72 +359,73 @@ export default {
   box-shadow: 0 1px 1px #eee;
   background-color: #fff;
   border-radius: 12px;
-  img{
+  img {
     border: none;
     width: 310px;
-    height:150px;
+    height: 150px;
     margin: 10px;
     border-radius: 12px;
   }
-  .windName{
+  .windName {
     margin-top: -15px;
-    .iconfont{
-      font-size: 14px;
+    .iconfont {
+      font-size: 16px;
       margin-left: 10px;
+      color: red;
     }
-    span{
+    span {
       font-size: 16px;
       margin-left: 5px;
       font-weight: bold;
-      opacity: .8;
+      opacity: 0.8;
     }
   }
-  .profit{
+  .profit {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    div{
+    div {
       display: flex;
       justify-content: space-around;
       flex-direction: column;
       align-items: center;
       margin-bottom: 10px;
-      span:nth-child(1){
+      span:nth-child(1) {
         color: #ffc400;
         font-size: 16px;
         font-weight: bold;
-        span{
+        span {
           font-size: 12px;
           font-weight: normal;
         }
         padding-bottom: 3px;
         padding-top: 10px;
       }
-      span:nth-child(2){
+      span:nth-child(2) {
         font-size: 12px;
         color: #a5a5a5;
       }
     }
   }
-  .date{
+  .date {
     display: flex;
     justify-content: space-between;
     // align-items: center;
     margin-bottom: 15px;
     margin-left: 10px;
-    div{
+    div {
       display: flex;
       flex-direction: column;
-      span{
+      span {
         font-size: 14px;
         color: #a5a5a5;
         margin-bottom: 5px;
       }
-      div{
-        .van-progress{
+      div {
+        .van-progress {
           width: 160px;
         }
-        p{
+        p {
           float: right;
           margin-left: 165px;
           font-size: 12px;
@@ -394,7 +434,7 @@ export default {
         }
       }
     }
-    button{
+    button {
       height: 35px;
       font-size: 16px;
       border: none;
@@ -406,8 +446,8 @@ export default {
   }
 }
 // 第二个项目的按钮
-#towBtn{
+#towBtn {
   background-color: #386766;
-  color:#fff;
+  color: #fff;
 }
 </style>

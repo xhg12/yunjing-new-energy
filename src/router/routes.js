@@ -14,6 +14,16 @@ export default [
         path: 'user',
         name: 'user',
         component: () => import(/* webpackChunkName: "home" */ '../views/user/index.vue')
+      },
+      {
+        path: '/about',
+        name: 'about',
+        component: () => import(/* webpackChunkName: "home" */ '../views/aboutUs/index.vue')
+      },
+      {
+        path: '/onlineService',
+        name: 'onlineService',
+        component: () => import(/* webpackChunkName: "home" */ '../views/onlineService/index.vue')
       }
     ]
   },
